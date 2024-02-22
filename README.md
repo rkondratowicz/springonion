@@ -13,6 +13,7 @@ The project is organised using the clean/onion/haxagonal architecture and contai
 # What's included
 - Java 21
 - Gradle
+- Lombok
 - Spring Boot
 - AssertJ
 - Mockito
