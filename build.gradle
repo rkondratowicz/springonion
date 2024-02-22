@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.freefair.lombok' version '8.6'
+    id 'java-test-fixtures'
 }
 
 group = 'org.github.rkondratowicz'
@@ -13,6 +14,7 @@ repositories {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'io.freefair.lombok'
+    apply plugin: 'java-test-fixtures'
     repositories {
         mavenCentral()
     }
