@@ -4,3 +4,16 @@
 
 # springonion
 Opinionated Spring + Onion Architecture template
+
+The project is oraganised using the clean/onion/haxagonal architecture and contains 3 modules:
+- `domain` - a place for entities and business logic. Does not have dependencies on other modules
+- `application` - connects intrastructure wit the domain. Defines ports (interfaces) that are implemented in the infrastructure module. Has a dependency on the domain module.
+- `infrastructure` - the outer layer of the app. Used for communication with the outside world (web APIs, DBs, queues, etc.)
+
+# What's included
+- Java 21
+- Gradle
+- Spring Boot
+- AssertJ
+- Mockito
+- `.editorconfig`
